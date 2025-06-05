@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0E5E9"
+    android:padding="24dp">
+
+    <!-- Profile Photo -->
+
+    <!-- Name and Info -->
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- App Description -->
+    <TextView
+        android:id="@+id/authorInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Noor Fatihah Asyikin Binti Ramli\n2023114309\nICT602"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appIcon" />
+
+    <!-- Footer -->
+
+    <LinearLayout
+        android:layout_width="131dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/authorInfo">
+
+        <!-- GitHub Link -->
+
+        <ImageView
+            android:id="@+id/githubLogo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="GitHub"
+            android:src="@drawable/githublogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/authorInfo" />
+
+
+        <!-- YouTube Link -->
+        <ImageView
+            android:id="@+id/youtubeLogo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="YouTube"
+            android:src="@drawable/ytlogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/authorInfo" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/appDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#948CA6"
+        android:padding="12dp"
+        android:text="KeenVest is a user-friendly app that helps you calculate monthly dividends from unit trust investments easily and accurately."
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="© 2025 Fatihah Asyikin. All rights reserved."
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appDescription"
+        app:layout_constraintVertical_bias="0.244" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
